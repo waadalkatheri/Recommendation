@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- ActivityMain.xml.
+- This is a template layout for our MainActivity.
+- Root layout tag is CoordinatorLayout from design support library.
+- CordinatorLayout is viewgroup that is a superpowered on framelayout.
+- CoordinatorLayout is intended for two primary use cases:
+As a top-level application decor or chrome layout
+As a container for a specific interaction with one or more child views
+- Inside our CordinatorLayout we add : AppBarLayout,FloatingActionButton and include content_main.xml.
+- AppBarLayout is vertical LinearLayout that implements scrolling features of material design concept.
+- It should be a direct child of CordinatorLayout, otherwise alot of features won't work.
+- Inside the AppBarLayout we add our toolbar,which we give a blue color.
+- We will add our widgets in our content_main.xml, not here as this is a template layout.
+- Finally we have a FloatingActionButton, a class that derives from android.support.design.widget.VisibilityAwareImageButton.
+Its the round button you see in our user interface.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_main"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:tag="Social_Main"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/coordinatorLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:fitsSystemWindows="true"
+        tools:layout_editor_absoluteY="81dp">
+
+
+        <include
+            android:id="@+id/include4"
+            layout="@layout/content_main"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="8dp"
+            android:text="إرسال"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="63dp"
+            android:hint="كتابة مشاركة جديدة"
+            app:layout_constraintBottom_toTopOf="@+id/include4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/PostBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="كتابة مشاركة جديدة" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/informativeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="تم إرسال مشاركتك بنجاح!"
+            android:visibility="invisible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/submitButton"
+            app:layout_constraintStart_toEndOf="@+id/submitButton" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
+

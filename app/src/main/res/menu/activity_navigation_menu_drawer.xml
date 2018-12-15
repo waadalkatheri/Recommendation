@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/MainMenu"
+            android:icon="@drawable/ic_homescreen"
+            android:title="الصفحة الرئيسية" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="البحث عن حديقة" />
+        <item
+            android:id="@+id/nav_social_network"
+            android:icon="@drawable/ic_social"
+            android:title="الشبكة الإجتماعية" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="الملف الشخصي" />
+    </group>
+
+    <item android:title="حسابي">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="الإعدادات" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_sign_out"
+                android:title="تسجيل الخروج" />
+        </menu>
+    </item>
+
+</menu>

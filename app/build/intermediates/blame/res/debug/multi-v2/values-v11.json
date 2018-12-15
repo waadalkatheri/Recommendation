@@ -1,0 +1,39 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/waadalkatheri/Downloads/RecommendationW-3/Recommendation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/waadalkatheri/.gradle/caches/transforms-1/files-1.1/tweet-ui-3.1.1.aar/0aa1de65c7b097eb1e904f3e79149deb/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "315"
+                    },
+                    "to": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "1081",
+                        "endLines": "22",
+                        "endColumns": "12",
+                        "endOffsets": "1341"
+                    }
+                },
+                {
+                    "source": "/Users/waadalkatheri/.gradle/caches/transforms-1/files-1.1/tweet-composer-3.1.1.aar/fc675672749ec9db184a2839b21a5d4b/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,565",
+                        "endLines": "9,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "560,1076"
+                    }
+                }
+            ]
+        }
+    ]
+}
